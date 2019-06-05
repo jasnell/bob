@@ -15,7 +15,7 @@ class StartExtensionSink extends Sink {
     // sink handles buffer allocation
     const buffer = new Buffer(0)
 
-    this.source.pull(null, buffer)
+    this.source.pull(null, buffer, 0)
   }
 }
 

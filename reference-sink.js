@@ -23,7 +23,7 @@ class Sink {
     // sink handles buffer allocation
     const buffer = new Buffer(0)
 
-    this.source.pull(null, buffer)
+    this.source.pull(null, buffer, 0)
   }
 
   next (status, error, buffer, bytes) {
